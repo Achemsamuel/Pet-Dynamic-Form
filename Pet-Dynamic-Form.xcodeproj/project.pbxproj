@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5C72BFE22D0044C0029ED04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72BFD22D0044C0029ED04 /* AppDelegate.swift */; };
+		A5C72C0022D0044C0029ED04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72BFF22D0044C0029ED04 /* ViewController.swift */; };
+		A5C72C0322D0044C0029ED04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C72C0122D0044C0029ED04 /* Main.storyboard */; };
+		A5C72C0522D0044E0029ED04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C72C0422D0044E0029ED04 /* Assets.xcassets */; };
+		A5C72C0822D0044E0029ED04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C72C0622D0044E0029ED04 /* LaunchScreen.storyboard */; };
+		A5C72C1322D0044E0029ED04 /* Pet_Dynamic_FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72C1222D0044E0029ED04 /* Pet_Dynamic_FormTests.swift */; };
+		A5C72C1E22D0044E0029ED04 /* Pet_Dynamic_FormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72C1D22D0044E0029ED04 /* Pet_Dynamic_FormUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C72C0F22D0044E0029ED04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C72BF222D0044C0029ED04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C72BF922D0044C0029ED04;
+			remoteInfo = "Pet-Dynamic-Form";
+		};
+		A5C72C1A22D0044E0029ED04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C72BF222D0044C0029ED04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C72BF922D0044C0029ED04;
+			remoteInfo = "Pet-Dynamic-Form";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5C72BFA22D0044C0029ED04 /* Pet-Dynamic-Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet-Dynamic-Form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C72BFD22D0044C0029ED04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5C72BFF22D0044C0029ED04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5C72C0222D0044C0029ED04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5C72C0422D0044E0029ED04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C72C0722D0044E0029ED04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5C72C0922D0044E0029ED04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C72C0E22D0044E0029ED04 /* Pet-Dynamic-FormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-Dynamic-FormTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C72C1222D0044E0029ED04 /* Pet_Dynamic_FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_Dynamic_FormTests.swift; sourceTree = "<group>"; };
+		A5C72C1422D0044E0029ED04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C72C1922D0044E0029ED04 /* Pet-Dynamic-FormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pet-Dynamic-FormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C72C1D22D0044E0029ED04 /* Pet_Dynamic_FormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_Dynamic_FormUITests.swift; sourceTree = "<group>"; };
+		A5C72C1F22D0044E0029ED04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5C72BF722D0044C0029ED04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72C0B22D0044E0029ED04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72C1622D0044E0029ED04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5C72BF122D0044C0029ED04 = {
+			isa = PBXGroup;
+			children = (
+				A5C72BFC22D0044C0029ED04 /* Pet-Dynamic-Form */,
+				A5C72C1122D0044E0029ED04 /* Pet-Dynamic-FormTests */,
+				A5C72C1C22D0044E0029ED04 /* Pet-Dynamic-FormUITests */,
+				A5C72BFB22D0044C0029ED04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C72BFB22D0044C0029ED04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72BFA22D0044C0029ED04 /* Pet-Dynamic-Form.app */,
+				A5C72C0E22D0044E0029ED04 /* Pet-Dynamic-FormTests.xctest */,
+				A5C72C1922D0044E0029ED04 /* Pet-Dynamic-FormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C72BFC22D0044C0029ED04 /* Pet-Dynamic-Form */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72BFD22D0044C0029ED04 /* AppDelegate.swift */,
+				A5C72BFF22D0044C0029ED04 /* ViewController.swift */,
+				A5C72C0122D0044C0029ED04 /* Main.storyboard */,
+				A5C72C0422D0044E0029ED04 /* Assets.xcassets */,
+				A5C72C0622D0044E0029ED04 /* LaunchScreen.storyboard */,
+				A5C72C0922D0044E0029ED04 /* Info.plist */,
+			);
+			path = "Pet-Dynamic-Form";
+			sourceTree = "<group>";
+		};
+		A5C72C1122D0044E0029ED04 /* Pet-Dynamic-FormTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72C1222D0044E0029ED04 /* Pet_Dynamic_FormTests.swift */,
+				A5C72C1422D0044E0029ED04 /* Info.plist */,
+			);
+			path = "Pet-Dynamic-FormTests";
+			sourceTree = "<group>";
+		};
+		A5C72C1C22D0044E0029ED04 /* Pet-Dynamic-FormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C72C1D22D0044E0029ED04 /* Pet_Dynamic_FormUITests.swift */,
+				A5C72C1F22D0044E0029ED04 /* Info.plist */,
+			);
+			path = "Pet-Dynamic-FormUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5C72BF922D0044C0029ED04 /* Pet-Dynamic-Form */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C72C2222D0044E0029ED04 /* Build configuration list for PBXNativeTarget "Pet-Dynamic-Form" */;
+			buildPhases = (
+				A5C72BF622D0044C0029ED04 /* Sources */,
+				A5C72BF722D0044C0029ED04 /* Frameworks */,
+				A5C72BF822D0044C0029ED04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pet-Dynamic-Form";
+			productName = "Pet-Dynamic-Form";
+			productReference = A5C72BFA22D0044C0029ED04 /* Pet-Dynamic-Form.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5C72C0D22D0044E0029ED04 /* Pet-Dynamic-FormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C72C2522D0044E0029ED04 /* Build configuration list for PBXNativeTarget "Pet-Dynamic-FormTests" */;
+			buildPhases = (
+				A5C72C0A22D0044E0029ED04 /* Sources */,
+				A5C72C0B22D0044E0029ED04 /* Frameworks */,
+				A5C72C0C22D0044E0029ED04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C72C1022D0044E0029ED04 /* PBXTargetDependency */,
+			);
+			name = "Pet-Dynamic-FormTests";
+			productName = "Pet-Dynamic-FormTests";
+			productReference = A5C72C0E22D0044E0029ED04 /* Pet-Dynamic-FormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C72C1822D0044E0029ED04 /* Pet-Dynamic-FormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C72C2822D0044E0029ED04 /* Build configuration list for PBXNativeTarget "Pet-Dynamic-FormUITests" */;
+			buildPhases = (
+				A5C72C1522D0044E0029ED04 /* Sources */,
+				A5C72C1622D0044E0029ED04 /* Frameworks */,
+				A5C72C1722D0044E0029ED04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C72C1B22D0044E0029ED04 /* PBXTargetDependency */,
+			);
+			name = "Pet-Dynamic-FormUITests";
+			productName = "Pet-Dynamic-FormUITests";
+			productReference = A5C72C1922D0044E0029ED04 /* Pet-Dynamic-FormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C72BF222D0044C0029ED04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Achem Samuel";
+				TargetAttributes = {
+					A5C72BF922D0044C0029ED04 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A5C72C0D22D0044E0029ED04 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5C72BF922D0044C0029ED04;
+					};
+					A5C72C1822D0044E0029ED04 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5C72BF922D0044C0029ED04;
+					};
+				};
+			};
+			buildConfigurationList = A5C72BF522D0044C0029ED04 /* Build configuration list for PBXProject "Pet-Dynamic-Form" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5C72BF122D0044C0029ED04;
+			productRefGroup = A5C72BFB22D0044C0029ED04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C72BF922D0044C0029ED04 /* Pet-Dynamic-Form */,
+				A5C72C0D22D0044E0029ED04 /* Pet-Dynamic-FormTests */,
+				A5C72C1822D0044E0029ED04 /* Pet-Dynamic-FormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5C72BF822D0044C0029ED04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72C0822D0044E0029ED04 /* LaunchScreen.storyboard in Resources */,
+				A5C72C0522D0044E0029ED04 /* Assets.xcassets in Resources */,
+				A5C72C0322D0044C0029ED04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72C0C22D0044E0029ED04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72C1722D0044E0029ED04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C72BF622D0044C0029ED04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72C0022D0044C0029ED04 /* ViewController.swift in Sources */,
+				A5C72BFE22D0044C0029ED04 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72C0A22D0044E0029ED04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72C1322D0044E0029ED04 /* Pet_Dynamic_FormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C72C1522D0044E0029ED04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C72C1E22D0044E0029ED04 /* Pet_Dynamic_FormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C72C1022D0044E0029ED04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C72BF922D0044C0029ED04 /* Pet-Dynamic-Form */;
+			targetProxy = A5C72C0F22D0044E0029ED04 /* PBXContainerItemProxy */;
+		};
+		A5C72C1B22D0044E0029ED04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C72BF922D0044C0029ED04 /* Pet-Dynamic-Form */;
+			targetProxy = A5C72C1A22D0044E0029ED04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5C72C0122D0044C0029ED04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C72C0222D0044C0029ED04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5C72C0622D0044E0029ED04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C72C0722D0044E0029ED04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5C72C2022D0044E0029ED04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5C72C2122D0044E0029ED04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C72C2322D0044E0029ED04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L94XRPVKN;
+				INFOPLIST_FILE = "Pet-Dynamic-Form/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.achemsamuel.Pet-Dynamic-Form";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5C72C2422D0044E0029ED04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L94XRPVKN;
+				INFOPLIST_FILE = "Pet-Dynamic-Form/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.achemsamuel.Pet-Dynamic-Form";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5C72C2622D0044E0029ED04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L94XRPVKN;
+				INFOPLIST_FILE = "Pet-Dynamic-FormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.achemsamuel.Pet-Dynamic-FormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet-Dynamic-Form.app/Pet-Dynamic-Form";
+			};
+			name = Debug;
+		};
+		A5C72C2722D0044E0029ED04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L94XRPVKN;
+				INFOPLIST_FILE = "Pet-Dynamic-FormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.achemsamuel.Pet-Dynamic-FormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pet-Dynamic-Form.app/Pet-Dynamic-Form";
+			};
+			name = Release;
+		};
+		A5C72C2922D0044E0029ED04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L94XRPVKN;
+				INFOPLIST_FILE = "Pet-Dynamic-FormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.achemsamuel.Pet-Dynamic-FormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pet-Dynamic-Form";
+			};
+			name = Debug;
+		};
+		A5C72C2A22D0044E0029ED04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L94XRPVKN;
+				INFOPLIST_FILE = "Pet-Dynamic-FormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.achemsamuel.Pet-Dynamic-FormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Pet-Dynamic-Form";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5C72BF522D0044C0029ED04 /* Build configuration list for PBXProject "Pet-Dynamic-Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72C2022D0044E0029ED04 /* Debug */,
+				A5C72C2122D0044E0029ED04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C72C2222D0044E0029ED04 /* Build configuration list for PBXNativeTarget "Pet-Dynamic-Form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72C2322D0044E0029ED04 /* Debug */,
+				A5C72C2422D0044E0029ED04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C72C2522D0044E0029ED04 /* Build configuration list for PBXNativeTarget "Pet-Dynamic-FormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72C2622D0044E0029ED04 /* Debug */,
+				A5C72C2722D0044E0029ED04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C72C2822D0044E0029ED04 /* Build configuration list for PBXNativeTarget "Pet-Dynamic-FormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C72C2922D0044E0029ED04 /* Debug */,
+				A5C72C2A22D0044E0029ED04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5C72BF222D0044C0029ED04 /* Project object */;
+}
