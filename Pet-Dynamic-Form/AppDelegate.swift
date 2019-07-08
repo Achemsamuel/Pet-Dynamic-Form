@@ -11,11 +11,35 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
 
+    
+    var window: UIWindow?
+    var navigationController : UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+      
+
+            
+            /*
+            window = UIWindow(frame: UIScreen.main.bounds)
+            if let window = window {
+                let mainVC = MainViewController()
+                navigationController = UINavigationController(rootViewController: mainVC)
+                window.rootViewController = navigationController
+                window.makeKeyAndVisible()
+                print("VC number \(i)")
+                //navigationController = UINavigationController(nibName: "Page: \(i)", bundle: nil)
+                //
+                //
+                navigationController?.navigationBar.barTintColor = UIColor.flatOrangeDark
+                //navigationController?.pushViewController(, animated: true)
+                */
+               
+            //}
+            
+            
+        //}
         return true
     }
 
