@@ -1,7 +1,7 @@
 # Pet-Dynamic-Form
 A dynamic json form with dynamic pages and sections.
 
-#Welcome Screen
+# Welcome Screen
 ![alt-text](https://res.cloudinary.com/dyuuulmg0/image/upload/c_scale,w_240/v1562624957/Simulator_Screen_Shot_-_iPhone_X%CA%80_-_2019-07-08_at_22.45.50.png)
 
 # Page Two
