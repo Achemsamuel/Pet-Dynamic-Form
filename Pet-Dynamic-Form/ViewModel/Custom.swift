@@ -32,5 +32,25 @@ extension UITextField {
     
 }
 
-
+extension Views {
+    func hideShow (textField: UITextField, target : [String], element : Element) {
+        
+//        for k in target {
+//            if (k == element.unique_id) {
+//                textField.isHidden = true
+//                hiddenFIeld = textField
+//                hiddenFIeld.isHidden = true
+//                //isHiddenState = true
+//
+//                let switchState = switchChanged(sender: mySwitch)
+//                if !switchState {
+//                    textField.isHidden = false
+//                } else {
+//                    textField.isHidden = true
+//                }
+//            }
+//        }
+    }
     
+}
+
