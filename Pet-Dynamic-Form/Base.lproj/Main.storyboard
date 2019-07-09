@@ -17,7 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="NtV-0F-WzV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.70588235290000001" green="0.35294117650000001" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="u9V-2e-7Z0"/>
                     </view>
                     <navigationItem key="navigationItem" id="G55-oL-erB"/>
@@ -34,7 +34,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Cj-yt-fc7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.76172032379999999" green="0.29501630490000003" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.49411764705882355" green="0.3411764705882353" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

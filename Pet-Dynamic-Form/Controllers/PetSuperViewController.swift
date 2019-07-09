@@ -83,7 +83,7 @@ class PetSuperViewController: UIViewController, UIScrollViewDelegate {
         pageControl.translatesAutoresizingMaskIntoConstraints = false
         pageControl.currentPageIndicatorTintColor = UIColor.black
         pageControl.isUserInteractionEnabled = false
-        pageControl.pageIndicatorTintColor = .flatWhite
+        pageControl.pageIndicatorTintColor = UIColor(hexString: "7e57c2")
         view.insertSubview(pageControl, at: 0)
         view.bringSubviewToFront(pageControl)
         

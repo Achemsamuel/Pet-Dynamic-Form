@@ -22,7 +22,7 @@ class Views {
         //textField.setPadding(forLeft: 20, forRight: 20)
         textField.placeholder = label
         textField.adjustsFontForContentSizeCategory = true
-        
+        //textField.layer.borderWidth = 1.0
         textField.minimumFontSize = 0.3
         textField.adjustsFontSizeToFitWidth = true
         textField.borderStyle = .roundedRect
@@ -56,8 +56,8 @@ class Views {
 
         let textField : UITextField = UITextField(frame: (CGRect(x: 30, y: y, width: Int(view.frame.width - 60), height: 40)))
         textField.placeholder = label
-        //textField.setPadding(forLeft: 20, forRight: 20)
         textField.minimumFontSize = 0.3
+        //textField.layer.borderWidth = 1.0
         textField.adjustsFontSizeToFitWidth = true
         textField.borderStyle = .roundedRect
         textField.keyboardType = .numberPad
@@ -181,7 +181,7 @@ class Views {
         let button = UIButton()
         button.frame = CGRect(x: 0, y: 0, width: 150, height: 50)
         button.setTitle("Submit", for: .normal)
-        button.backgroundColor = .flatGreenDark
+        button.backgroundColor = UIColor(hexString: "7e57c2")
         let cornerRadius : CGFloat = 15.0
         button.layer.borderWidth = 1.0
         button.layer.borderColor = UIColor(red: 0.93, green: 0.94, blue: 0.95, alpha: 1).cgColor

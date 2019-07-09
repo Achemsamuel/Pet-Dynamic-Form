@@ -236,15 +236,16 @@ class PageViewController: UIViewController {
     
     func addSwitch (view : UIView, label : String) -> UISwitch {
         
-        let mySwitch = UISwitch()
-        mySwitch.center = view.center
-        mySwitch.setOn(false, animated: false)
-        mySwitch.tintColor = .red
-        mySwitch.onTintColor = .flatGreenDark
-        mySwitch.thumbTintColor = UIColor.white
-        mySwitch.addTarget(self, action: #selector(switchChanged(sender:)), for: UIControl.Event.valueChanged)
+        let toggleSwitch = UISwitch()
+        toggleSwitch.center = view.center
+        toggleSwitch.setOn(false, animated: false)
+        toggleSwitch.tintColor = .red
+        toggleSwitch.onTintColor = .flatGreenDark
+        //mySwitch.thumbTintColor = UIColor(hexString: "7e57c2")
+        toggleSwitch.thumbTintColor = .gray
+        toggleSwitch.addTarget(self, action: #selector(switchChanged(sender:)), for: UIControl.Event.valueChanged)
         
-        return mySwitch
+        return toggleSwitch
     }
     
     
