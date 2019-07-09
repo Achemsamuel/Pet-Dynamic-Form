@@ -11,6 +11,7 @@ target 'Pet-Dynamic-Form' do
     #pod 'SkyFloatingLabelTextField', '~> 3.0'
 	pod 'LabelSwitch'
 	pod 'SnapKit', '~> 5.0.0'
+    pod 'IQKeyboardManagerSwift'
    
 
   target 'Pet-Dynamic-FormTests' do

@@ -2,18 +2,21 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
+  - IQKeyboardManagerSwift (6.4.0)
   - Kingfisher (5.1.0)
   - LabelSwitch (0.1.5)
   - SnapKit (5.0.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - IQKeyboardManagerSwift
   - Kingfisher (~> 5.0)
   - LabelSwitch
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - IQKeyboardManagerSwift
     - Kingfisher
     - LabelSwitch
     - SnapKit
@@ -29,10 +32,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
   Kingfisher: fcec238063d17404fca89bf0a850583211c4cbf6
   LabelSwitch: 79857150b64ef2b3e16693b1c48755f99938b0d6
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 10c01dcddd9a58dfe1536382b88cf8906271e0de
+PODFILE CHECKSUM: aa570f6b55b5589c11a0728c499f9ccfe1bd77ba
 
 COCOAPODS: 1.5.3

@@ -22,6 +22,7 @@ class PageViewController: UIViewController {
     var textFieldArray : [UITextField] = [UITextField]()
     var formattedNumTextArray : [UITextField] = [UITextField]()
     var dateFieldArray : [UITextField] = [UITextField]()
+    var switchArray : [UISwitch] = [UISwitch]()
     lazy var pagesCount = 0
     
    
@@ -126,8 +127,11 @@ class PageViewController: UIViewController {
                 }
                 
             case "yesno":
-                createLabel(title: i.label ?? "no label for target")
-                self.mySwitch = createYesNoSwitch(label: i.label ?? "")
+                if i.isMandatory == true {
+                    createLabel(title: i.label ?? "no label for target")
+                    let mandatorySwitch = createYesNoSwitch(label: i.label ?? "")
+                    switchArray.append(mandatorySwitch)
+                }
                 var action = ""
                 var otherwise = ""
                 if i.rules?.isEmpty == false {
@@ -281,7 +285,7 @@ class PageViewController: UIViewController {
      -------------------------------*/
     @objc func valaidate() {
         
-        let validationKey = validateFields(textArray: textFieldArray, phoneFIeldArray: formattedNumTextArray, dateFieldArray: dateFieldArray)
+        let validationKey = validateFields(textArray: textFieldArray, phoneFIeldArray: formattedNumTextArray, dateFieldArray: dateFieldArray, switch: switchArray)
         if validationKey {
             print("All fields validated")
             successfulAlert()
@@ -291,7 +295,7 @@ class PageViewController: UIViewController {
         }
     }
     
-    func validateFields (textArray : [UITextField], phoneFIeldArray : [UITextField], dateFieldArray : [UITextField])  -> Bool {
+    func validateFields (textArray : [UITextField], phoneFIeldArray : [UITextField], dateFieldArray : [UITextField], switch : [UISwitch])  -> Bool {
         
         //TextArray
         for field in textArray {
@@ -317,6 +321,13 @@ class PageViewController: UIViewController {
                 return false
             }
         }
+        
+        for eachSwitch in switchArray {
+            if eachSwitch.isOn == false {
+                return false
+            }
+        }
+       
         
         return true
         

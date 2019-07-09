@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6444305C2CDB4DE74BC7EED192241CD"
+               BlueprintIdentifier = "45345823FF8B6326C89133ABC345841B"
                BuildableName = "Pods_Pet_Dynamic_Form.framework"
                BlueprintName = "Pods-Pet-Dynamic-Form"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6444305C2CDB4DE74BC7EED192241CD"
+            BlueprintIdentifier = "45345823FF8B6326C89133ABC345841B"
             BuildableName = "Pods_Pet_Dynamic_Form.framework"
             BlueprintName = "Pods-Pet-Dynamic-Form"
             ReferencedContainer = "container:Pods.xcodeproj">
