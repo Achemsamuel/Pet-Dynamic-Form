@@ -86,6 +86,7 @@ class Views {
         print("Switch value is \(sender.isOn)")
     }
     */
+    
     func addCustomSwitchField (label : String, view : UIView) -> LabelSwitch {
         let ls = LabelSwitchConfig(text: "Text1",
                                    textColor: .white,
@@ -189,13 +190,6 @@ class Views {
         
         return button
     }
-
-}
-
-
-
-extension Views {
-   
 
 }
 
