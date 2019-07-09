@@ -121,11 +121,10 @@ class Views {
         imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
         let imageUrl = fileUrl
-        //simageView.backgroundColor = .flatRed
         let cornerRadius : CGFloat = 30.0
         imageView.layer.cornerRadius = cornerRadius
-        //imageView.layer.borderWidth = 1.0
-        //imageView.layer.borderColor = UIColor(red: 0.15, green: 0.06, blue: 0.98, alpha: 1).cgColor
+        imageView.layer.borderWidth = 1.0
+        imageView.layer.borderColor = UIColor(red: 0.15, green: 0.06, blue: 0.98, alpha: 1).cgColor
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
         imageView.layer.shouldRasterize = true

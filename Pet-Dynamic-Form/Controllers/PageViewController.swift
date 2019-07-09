@@ -75,9 +75,9 @@ class PageViewController: UIViewController {
     /*-------------------------------
      Mark: Get Elements Methods
      -------------------------------*/
-    var target = [String]()
-    var isHiddenState = Bool()
-    var hiddenFIeld = UITextField()
+    lazy var target = [String]()
+    lazy var isHiddenState = Bool()
+    lazy var hiddenField = UITextField()
     var mySwitch : UISwitch?
     
     func getElements (no : Int) {
@@ -93,11 +93,16 @@ class PageViewController: UIViewController {
                     let mandatoryTextField = createTextView(placeholder: i.label ?? "", uniqueID: i.unique_id ?? "")
                     mandatoryTextField.requiredField()
                     self.textFieldArray.append(mandatoryTextField)
+                    for k in target {
+                        if (k == i.unique_id) {
+                            self.hiddenField = getTargetElement(textField: mandatoryTextField)
+                        }
+                    }
                 } else {
                     let field = createTextView(placeholder: i.label ?? "", uniqueID: i.unique_id ?? "")
                     for k in target {
                         if (k == i.unique_id) {
-                            //TODO: Make textfield hidden or visible when switch is toggled
+                            self.hiddenField = getTargetElement(textField: field)
                         }
                     }
 
@@ -143,17 +148,6 @@ class PageViewController: UIViewController {
         
     }
     
-    
-    
-    //find out if the textview id dependent, if it is then grab a reference to it and assign it to a text field, then nake that textfield hidden
- /*
-    func getAction (element: Element, index: Int) {
-        let newArray = element.rules.map({ (key) -> String in
-            target = key.target!
-            return key.action!
-        })
-    } */
-    
     func isDependent (element : Element) -> Bool {
         
         if element.rules?.isEmpty == false {
@@ -162,32 +156,20 @@ class PageViewController: UIViewController {
         return false
     }
     
-    func getTargetElement (id : String) {
+    func getTargetElement (textField : UITextField) -> UITextField {
+        textField.isHidden = true
         
-    }
-    
-    func hideShow (textField: UITextField, target : [String], element : Element) {
-        
-        for k in target {
-            if (k == element.unique_id) {
-                textField.isHidden = true
-                
-                let switchState = switchChanged(sender: mySwitch)
-                if !switchState {
-                    textField.isHidden = false
-                } else {
-                    textField.isHidden = true
-                }
-            }
-        }
+        return textField
     }
     
     @objc func switchChanged(sender: UISwitch!) -> Bool {
         
         print("Switch value is \(sender.isOn)")
         if sender.isOn {
+            self.hiddenField.isHidden = false
             return true
         } else {
+            self.hiddenField.isHidden = true
             return false
         }
     }
@@ -257,7 +239,7 @@ class PageViewController: UIViewController {
         let mySwitch = UISwitch()
         mySwitch.center = view.center
         mySwitch.setOn(false, animated: false)
-        mySwitch.tintColor = UIColor.blue
+        mySwitch.tintColor = .red
         mySwitch.onTintColor = .flatGreenDark
         mySwitch.thumbTintColor = UIColor.white
         mySwitch.addTarget(self, action: #selector(switchChanged(sender:)), for: UIControl.Event.valueChanged)
@@ -297,6 +279,7 @@ class PageViewController: UIViewController {
      Mark: Validation
      -------------------------------*/
     @objc func valaidate() {
+        
         let validationKey = validateFields(textArray: textFieldArray, phoneFIeldArray: formattedNumTextArray, dateFieldArray: dateFieldArray)
         if validationKey {
             print("All fields validated")
@@ -311,7 +294,7 @@ class PageViewController: UIViewController {
         
         //TextArray
         for field in textArray {
-            if (field.text?.isEmpty == true || field.text!.count < 5) {
+            if (field.text?.isEmpty == true && field.text!.count < 5) {
                 print("You have not filled this correctly")
                 
                 return false
@@ -319,9 +302,9 @@ class PageViewController: UIViewController {
         }
         
         for field in phoneFIeldArray {
-            if (field.text?.isEmpty == true || field.text!.count < 11 || field.text!.count > 11)  {
+            if (field.text?.isEmpty == true && field.text!.count < 11 && field.text!.count > 11)  {
                 print("You did not enter a valid phone number")
-                
+                inputCorrectNumber()
                 return false
             }
         }
@@ -446,6 +429,14 @@ extension PageViewController {
     func successfulAlert () {
         
         let alert = UIAlertController(title: "Successful", message: "Thank you for submitting an application, we will get back to you shortly", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
+    
+    func inputCorrectNumber () {
+        let alert = UIAlertController(title: "Incorrect Number", message: "Please input a correct phone number", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
         
